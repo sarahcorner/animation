@@ -1,0 +1,409 @@
+/* You may set the width and height of container/section elements in percentages. 
+DO NOT USE PERCENTAGES IN TEXTS AND IMAGES : No responsiveness  */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: black;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+/* FIRST SCREEN TEXT */
+
+#intro {
+	color: white;
+	font-family:'Avenir';
+	font-size:25px;
+	text-align:center;
+	line-height:40px;
+	padding-top: 110px;
+	animation: text 5s ease-in forwards;
+}
+
+.bottom {
+	padding-top:190px;
+	letter-spacing: 1em;
+	animation: text 10s ease-in forwards;
+}
+
+@keyframes text{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.title {
+	font-family: 'Avenir';
+	font-size: 100px;
+	color: white;
+	float: center;
+	margin-top:240px;
+	z-index: -1px;
+	opacity: 0;
+	animation: in 6s ease-out forwards;
+	animation-delay: 1s;
+	position: relative;
+}
+
+@keyframes in{
+  0%{
+    letter-spacing: -17px;
+    opacity: 0;
+    left:0px;
+  }
+
+  100%{
+    letter-spacing: 170px;
+    opacity: 1;
+    left:110px;
+  }
+
+
+}
+
+/* CIRCLES */
+
+#one {
+  	opacity:0.5;
+  	background:#1833D3;
+  	border-radius:100%;
+  	position:absolute;
+  	width: 650px;
+	height: 650px;
+	top: -100%;
+	bottom: -100%;
+	margin: auto;
+	animation: one 9s ease forwards;
+
+}
+
+@keyframes one {
+	0% {
+		left:-200em;
+	}
+	100% {
+		left: -200%;
+		right: -100%;
+	}
+
+}
+
+
+#two {
+  	opacity:0.5;
+  	background:#5CDAF7;
+  	border-radius:100%;
+  	position:absolute;
+  	width: 300px;
+	height: 300px;
+	top: -100%;
+	bottom: -100%;
+	margin: auto;
+	animation: two 9s ease forwards;
+
+}
+
+@keyframes two {
+	0% {
+		left:-180em;
+	}
+	100% {
+		left: -140%;
+		right: -100%;
+	}
+
+}
+
+#three {
+  	opacity:0.5;
+  	background:#40CC79;
+  	border-radius:100%;
+  	position:absolute;
+  	width: 200px;
+	height: 200px;
+	top: -100%;
+	bottom: -100%;
+	margin: auto;
+	animation: three 8s ease forwards;
+
+}
+
+@keyframes three {
+	0% {
+		left:-150em;
+	}
+	100% {
+		left: -110%;
+		right: -100%;
+	}
+
+}
+
+#four {
+  	opacity:0.5;
+  	background:#D1CD3D;
+  	border-radius:100%;
+  	position:absolute;
+  	width: 250px;
+	height: 250px;
+	top: -100%;
+	bottom: -100%;
+	margin: auto;
+	animation: four 6s ease forwards;
+
+}
+
+@keyframes four {
+	0% {
+		left:300px;
+	}
+	100% {
+		left: -85%;
+		right: -100%;
+	}
+
+}
+
+#five {
+  	opacity:0.5;
+  	background:#FF8806;
+  	border-radius:100%;
+  	position:absolute;
+  	width: 350px;
+	height: 350px;
+	top: -100%;
+	bottom: -100%;
+	margin: auto;
+	animation: five 6s ease forwards;
+
+}
+
+@keyframes five {
+	0% {
+		left:330px;
+	}
+	100% {
+		left: -50%;
+		right: -100%;
+	}
+
+}
+
+#six {
+  	opacity:0.5;
+  	background:#F41919;
+  	border-radius:100%;
+  	position:absolute;
+  	width: 500px;
+	height: 500px;
+	left: 0%;
+	right: -100%;
+	top: -100%;
+	bottom: -100%;
+	margin: auto;
+	animation: six 6s ease forwards;
+
+}
+
+@keyframes six {
+	0% {
+		left:350px;
+	}
+	100% {
+		left: 0%
+	}
+
+}
+
+/* END OF CIRCLES */
+
+/* END OF FIRST SCREEN */
+
+/* SECOND SCREEN TEXT */
+
+.hubble {
+	color: white;
+	letter-spacing: 8px;
+	left:50px;
+	top:50px;
+	position:absolute;
+	text-align: center;
+	float: center;
+	font-family:'Avenir';
+	font-size:25px;
+	animation: hubble 2s ease-in forwards;
+	animation-delay: 11s;
+	opacity: 0;
+	z-index: 95;
+}
+
+.hubbletwo {
+	color: white;
+	left:50px;
+	top:370px;
+	position:absolute;
+	line-height:31px;
+	text-align: left;
+	float: center;
+	font-family:'Avenir';
+	font-size:25px;
+	animation: hubbletwo 5s ease-in forwards;
+	animation-delay: 13s;
+	opacity: 0;
+	z-index: 96;
+}
+
+.hubblethree {
+	color: white;
+	letter-spacing: 8px;
+	left:740px;
+	top:800px;
+	position:absolute;
+	text-align: left;
+	font-family:'Avenir';
+	font-size:25px;
+	animation: hubble 8s ease-in forwards;
+	animation-delay: 20s;
+	opacity: 0;
+	z-index: 97;
+}
+
+@keyframes hubble{
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+
+@keyframes hubbletwo{
+	0% {
+		opacity: 0;
+		left: 100px;
+	}
+	100% {
+		opacity: 1;
+		left: 200px;
+	}
+
+}
+
+@keyframes hubblethree{
+	0% {
+		opacity: 0;
+		left: 150px;
+
+	}
+	100% {
+		opacity: 1;
+		left: 250px;
+	}
+
+}
+
+/* END OF SECOND SCREEN TEXT */
+
+.spaceship {
+	position: absolute;
+	animation: zoom 2s ease-in forwards;
+	animation-delay: 10s;
+	z-index: 90;
+}
+
+@keyframes zoom{
+  0%{
+    top:900px;
+    left:-1500px;
+  }
+
+  100%{
+    top:-1000px;
+    left:0px;
+  }
+ }
+
+ .doppler {
+	position: absolute;
+	top:-450px;
+	animation: doppler 16s ease-out forwards infinite;
+	animation-delay: 11s;
+	z-index: 91;
+	opacity: 0;
+}
+
+@keyframes doppler{
+  0% {
+    left: -400px;
+    opacity: 0;
+  }
+
+  75% {
+  	opacity: 1;
+  	left: -200px;
+  }
+
+  100% {
+    opacity: 0;
+    left: -200px;
+  }
+ }
+
+/* CURTAIN TRANSITION */
+
+#left {
+	height: 1000px;
+	width: 720px;
+	background: black;
+	z-index:98;
+	position:absolute;
+	top: 0px;
+	left: -720px;
+	animation: curtain_left 2s forwards;
+	animation-delay: 30s;
+}
+
+@keyframes curtain_left {
+	0% { left: -720px; }
+	100% { left: 0px; }
+}
+
+#right {
+	height: 1000px;
+	width: 720px;
+	background: black;
+	z-index:99;
+	top: 0px;
+	right: -720px;
+	position:absolute;
+	animation: curtain_right 2s forwards;
+	animation-delay: 30s;
+}
+
+@keyframes curtain_right {
+	0% { right: -720px; }
+	100% { right: 0px; }
+}
+
+/* END CURTAIN TRANSITION */
+
+
+
+
+
+
+
